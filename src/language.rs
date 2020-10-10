@@ -1,20 +1,12 @@
 use crate::language_enum;
 use failure::bail;
 
-language_enum!([DE, EN, ES, FR, IT, PT_PT, PT_BR, JA, KO]);
+language_enum!([EN]);
 
 impl Language {
     pub fn full_name(&self) -> &'static str {
         match *self {
-            Language::DE => "German",
             Language::EN => "English",
-            Language::ES => "Spanish",
-            Language::FR => "French",
-            Language::IT => "Italian",
-            Language::PT_PT => "Portuguese - Europe",
-            Language::PT_BR => "Portuguese - Brazil",
-            Language::JA => "Japanese",
-            Language::KO => "Korean",
         }
     }
 }
