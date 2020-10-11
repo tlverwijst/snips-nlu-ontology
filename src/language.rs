@@ -1,7 +1,7 @@
 use crate::language_enum;
 use failure::bail;
 
-language_enum!([DE, EN, ES, FR, IT, PT_PT, PT_BR, JA, KO]);
+language_enum!([DE, EN, ES, FR, IT, PT_PT, PT_BR, JA]);
 
 impl Language {
     pub fn full_name(&self) -> &'static str {
