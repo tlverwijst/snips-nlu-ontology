@@ -14,7 +14,6 @@ impl Language {
             Language::PT_PT => "Portuguese - Europe",
             Language::PT_BR => "Portuguese - Brazil",
             Language::JA => "Japanese",
-            Language::KO => "Korean",
         }
     }
 }
